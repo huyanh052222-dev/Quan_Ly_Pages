@@ -53,6 +53,12 @@ body{
         .heading{
             font-size: var(--h1);
             color: var(--primary);
+            #html{
+                color: #e58806;
+            }
+            #css{
+                color: #242eec;
+            }
         }
         .content{
             li{

@@ -49,18 +49,69 @@ body{
         max-width: 1200px;
         padding: 20px;
         border-radius: 20px;
-        background-color: var(--lg-bg);
-        box-shadow: var(--out-sd);
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
         .heading{
+            text-align: center;
             font-size: var(--h1);
             color: var(--primary);
+            span{
+                color: #e0c113;
+            }
         }
-        .content{
-            li{
-                list-style: none;
-                a{
-                    color: #E01316;
-                    text-decoration: none;
+        .wrap-content{
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            .box{
+                width: 100%;
+                max-width: 380px;
+                height: 500px;
+                box-shadow: var(--out-sd);
+                border-radius: 20px;
+                .heading,.content{
+                    max-width: 340px;
+                    margin:  0 auto;
+                    margin-top: 20px;
+                }
+                .heading{
+                    font-size: var(--h3);
+                    text-align: center;
+                }
+                .content{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .hero-pj{
+                        height: 300px;
+                        background-color: #999999;
+                        border-radius: 5px;
+                        box-shadow: inset var(--in-sd);
+                    }
+                    button{
+                        background-color: var(--accent);
+                        border: none;
+                        box-shadow: var(--out-sd);
+                        border-radius: 15px;
+                        transition: all 0.2s ease;
+                        a{
+                            text-decoration: none;
+                            color: var(--white-text);
+                            font-size: var(--h3);
+                            padding: 2px 134px;
+                            margin-left: -3px;
+                        }
+                    }
+                    button:hover{
+                        transform: scale(1.02);
+                    }
+                    button:active{
+                        box-shadow: inset var(--in-sd);
+                    }
                 }
             }
         }
