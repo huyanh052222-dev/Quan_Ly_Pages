@@ -50,6 +50,9 @@ body{
         .heading{
 
         }
+        .ver-box{
+            font-size: var(--h3);
+        }
         .content{
             
         }
