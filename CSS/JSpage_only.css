@@ -22,6 +22,7 @@
     --white-text: #fff;
 
     --hover: #E01316;
+    --hover-shadow: 0 8px 10px rgba(0, 0, 0, 0.481);
     
     /* Text & font */
     --fw400: 400;
@@ -72,6 +73,7 @@ body{
                 height: 500px;
                 box-shadow: var(--out-sd);
                 border-radius: 20px;
+                transition: all 0.3s ease;
                 .heading,.content{
                     max-width: 340px;
                     margin:  0 auto;
@@ -86,9 +88,25 @@ body{
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
+                    .js1{
+                        background: url(/asserts/JS-1.png);
+                    }
+                    .js2{
+                        background: url(/asserts/JS-2.png);
+                    }
+                    .js3{
+                        background: url(/asserts/JS-3.png);
+                    }
+                    .js4{
+                        background: url(/asserts/JS-4.png);
+                    }
+                    .js5{
+                        background: url(/asserts/JS-5.png);
+                    }
                     .hero-pj{
+                        background-size: cover;
+                        background-position: center;
                         height: 300px;
-                        background-color: #999999;
                         border-radius: 5px;
                         box-shadow: inset var(--in-sd);
                     }
@@ -113,6 +131,10 @@ body{
                         box-shadow: inset var(--in-sd);
                     }
                 }
+            }
+            .box:hover{
+                box-shadow: var(--hover-shadow);
+                transform: translateY(-10px);
             }
         }
     }

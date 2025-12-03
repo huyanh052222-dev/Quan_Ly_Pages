@@ -22,6 +22,8 @@
     --white-text: #fff;
 
     --hover: #E01316;
+    --hover-shadow: 0 8px 10px rgba(0, 0, 0, 0.481);
+
     
     /* Text & font */
     --fw400: 400;
@@ -48,28 +50,92 @@ body{
         max-width: 1200px;
         padding: 20px;
         border-radius: 20px;
-        background-color: var(--lg-bg);
-        box-shadow: var(--out-sd);
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
         .heading{
+            text-align: center;
             font-size: var(--h1);
             color: var(--primary);
-            #html{
-                color: #e58806;
-            }
-            #css{
-                color: #242eec;
+            span{
+                color: #e0c113;
             }
         }
-        .content{
-            li{
-                list-style: none;
-                span{
-                    color: blue;
+        .wrap-content{
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            .box{
+                width: 100%;
+                max-width: 380px;
+                height: 500px;
+                box-shadow: var(--out-sd);
+                border-radius: 20px;
+                transition: all 0.3s ease;
+                .heading,.content{
+                    max-width: 340px;
+                    margin:  0 auto;
+                    margin-top: 20px;
                 }
-                a{
-                    text-decoration: none;
-                    color: #E01316;
+                .heading{
+                    font-size: var(--h3);
+                    text-align: center;
                 }
+                .content{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    /* .js1{
+                        background: url(/asserts/JS-1.png);
+                    }
+                    .js2{
+                        background: url(/asserts/JS-2.png);
+                    }
+                    .js3{
+                        background: url(/asserts/JS-3.png);
+                    }
+                    .js4{
+                        background: url(/asserts/JS-4.png);
+                    }
+                    .js5{
+                        background: url(/asserts/JS-5.png);
+                    } */
+                    .hero-pj{
+                        background-size: cover;
+                        background-position: center;
+                        height: 300px;
+                        border-radius: 5px;
+                        box-shadow: inset var(--in-sd);
+                        background-color: #c1c1c1;
+                    }
+                    button{
+                        background-color: var(--accent);
+                        border: none;
+                        box-shadow: var(--out-sd);
+                        border-radius: 15px;
+                        transition: all 0.2s ease;
+                        a{
+                            text-decoration: none;
+                            color: var(--white-text);
+                            font-size: var(--h3);
+                            padding: 2px 134px;
+                            margin-left: -3px;
+                        }
+                    }
+                    button:hover{
+                        transform: scale(1.02);
+                    }
+                    button:active{
+                        box-shadow: inset var(--in-sd);
+                    }
+                }
+            }
+            .box:hover{
+                box-shadow: var(--hover-shadow);
+                transform: translateY(-10px);
             }
         }
     }
