@@ -58,8 +58,14 @@ body{
             font-size: var(--h2);
             color: rgb(254, 55, 55);
         }
+        .ver-list{
+            font-size: var(--h4);
+            a{
+                text-decoration: none;
+            }
+        }
         .hero-bg{
-            
+
         }
         .content{
             

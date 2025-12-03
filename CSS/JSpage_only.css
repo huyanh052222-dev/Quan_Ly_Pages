@@ -74,6 +74,7 @@ body{
                 box-shadow: var(--out-sd);
                 border-radius: 20px;
                 transition: all 0.3s ease;
+                background-color: var(--lg-bg);
                 .heading,.content{
                     max-width: 340px;
                     margin:  0 auto;
