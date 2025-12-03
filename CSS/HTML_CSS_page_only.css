@@ -32,6 +32,12 @@
     --out-sd:  0 4px 10px rgba(0, 0, 0, 0.499);
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 .hero-section{
     width: 100%;
     display: flex;
@@ -40,12 +46,17 @@
     .wrap-section{
         width: 100%;
         max-width: 1200px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: var(--lg-bg);
+        box-shadow: var(--out-sd);
         .heading{
             font-size: var(--h1);
             color: var(--primary);
         }
         .content{
             li{
+                list-style: none;
                 span{
                     color: blue;
                 }
